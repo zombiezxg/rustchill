@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .red-button {
+            background-color: red;
+            color: white;
+        }
+    </style>
 </head>
 <body>
 <div class="box">
@@ -21,7 +27,6 @@
             <img src="image/Site%20logo%20concept%203.png" alt="image" class="logo-image">
         </div>
         <div class="socials">
-
         </div>
         <div class="others">
             <p class="other fair">Provably Fair</p>
@@ -56,8 +61,8 @@
         </div>
         <div class="right-side">
             <div class="top-bar">
-                <button class="chat-button">CHAT</button>
-                <button class="inventory-button">INVENTORY</button>
+                <button class="chat-button" onclick="redirectToChat()">CHAT</button>
+                <button class="inventory-button red-button" onclick="performDeposit()">INVENTORY</button>
             </div>
             <div class="messages-container"></div>
             <div class="send-container">
@@ -73,5 +78,21 @@
         <p>SOME RANDOM FOOTER</p>
     </footer>
 </div>
+
+<script>
+    function redirectToChat() {
+        // Redirect the user to the desired chat website
+        window.location.href = "https://steamcommunity.com/profiles/76561197963579393";
+    }
+
+    function performDeposit() {
+        // Perform the deposit action here
+        // You can add your deposit logic or make an API call
+        // to handle the deposit functionality
+        console.log("Performing deposit action...");
+        // Add your code here to handle the deposit functionality
+    }
+</script>
+
 </body>
 </html>
